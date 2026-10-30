@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hima Nihongo · Starter</title>
+
+  <!-- Font dari Google Fonts: Plus Jakarta Sans (judul) + Inter (isi & tombol) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== [1] HEADER =====
+       Isi     : logo (assets/logo.svg + teks "Hima Nihongo")
+                 menu: Tentang · Kegiatan · Acara · Kontak
+                 tombol kecil: Gabung
+       Struktur: header.header > div.container.header-inner > a.logo, nav.nav, a.btn.btn-primary.btn-sm
+  -->
+
+  <header class="header">
+     <div class="container header-inner">
+          <a href="/" class="logo">
+               <img src="assets/logo.svg">
+               <span>Hima Nihongo</span>
+          </a>
+          
+          <nav>
+               <a href="#tentang">Tentang</a>
+               <a href="#kegiatan">Kegiatan</a>
+               <a href="#acara">Acara</a>
+               <a href="#kontak">Kontak</a>
+          </nav>
+
+          <a class="btn btn-primary btn-sm" href="#cta">Gabung</a>
+     </div>
+</header>
+
+<!-- ===== [2] HERO =====
+Isi     : overline  "Komunitas bahasa Jepang"
+judul H1  "Belajar bahasa & budaya Jepang bersama"
+deskripsi "Himpunan untuk mahasiswa yang ingin lancar berbahasa Jepang, ikut klub, dan kenal budayanya lewat kegiatan rutin."
+2 tombol  "Gabung sekarang" (utama) · "Lihat kegiatan" (outline)
+ilustrasi: kotak ungu muda berisi 3 kotak (yang tengah lebih besar)
+Struktur: section.hero > div.container > p.overline, h1.hero-title, p.hero-desc, div.hero-actions (2 tombol), div.hero-visual (3 div.visual-box, tengah + .visual-box-main)
+-->
+                 
+<section id="hero" class="hero">
+     <div class="container hero-inner">
+          <h3 class="overline">Komunitas Bahasa Jepang</h3>
+          <h1 class="hero-title">Belajar bahasa & budaya Jepang bersama</h1>
+          <p class="hero-desc">Himpunan untuk mahasiswa yang ingin lancar berbahasa Jepang, ikut klub, dan kenal budayanya lewat kegiatan rutin.</p>
+
+          <div class="hero-buttons">
+               <a href="#" class="btn btn-primary">Gabung sekarang</a>
+               <a href="#" class="btn btn-outline">Lihat kegiatan</a>
+          </div>
+
+          <div class="hero-visual">
+               <div class="visual-box"></div>
+               <div class="visual-box visual-box-main"></div>
+               <div class="visual-box"></div>
+          </div>
+     </div>
+</section>
+                 
+                 
+                 <!-- ===== [3] FITUR =====
+       Isi     : judul H2 "Kenapa gabung Hima Nihongo"
+                 card 1: ikon-percakapan.svg · "Kelas percakapan" · "Latihan ngobrol bahasa Jepang bareng anggota setiap minggu."
+                 card 2: ikon-kanji.svg      · "Klub kanji"       · "Belajar kanji pelan-pelan, dibimbing senior dan alumni."
+                 card 3: ikon-festival.svg   · "Festival budaya"  · "Acara dan workshop budaya Jepang yang terbuka untuk umum."
+       Struktur: section.features > div.container > h2.section-title, div.card-list > 3x article.card
+                 article.card > div.card-icon (img), h3.card-title, p.card-desc
+  -->
+
+  <section id="features" class="features">
+     <div class="container feature-inner">
+          <h2 class="section-title">Kenapa gabung Hima Nihongo</h2>
+
+          <div class="card-list">
+               <article class="card"> 
+                    <div class="card-icon">
+                         <img src="assets/ikon-percakapan.svg">
+                    </div>
+                    <h3 class="card-title">Kelas percakapan</h3>
+                    <p class="card-desc">Latihan ngobrol bahasa Jepang bareng anggota setiap minggu.</p>
+               </article>
+
+               <article class="card">
+                    <div class="card-icon">
+                         <img src="assets/ikon-kanji.svg">
+                    </div>
+                    <h3 class="card-title">Klub kanji</h3>
+                    <p class="card-desc">Belajar kanji pelan-pelan, dibimbing senior dan alumni.</p>
+               </article>
+
+               <article class="card">
+                    <div class="card-icon">
+                         <img src="assets/ikon-festival.svg">
+                    </div>
+                    <h3 class="card-title">Festival budaya</h3>
+                    <p class="card-desc">Acara dan workshop budaya Jepang yang terbuka untuk umum.</p>
+               </article>
+          </div>
+     </div>
+  </section>
+
+  <!-- ===== [4] CTA =====-->
+  <section id="cta" class="cta">
+     <div class="container cta-inner">
+          <h2 class="cta-title">Siap ikut kegiatan berikutnya?</h2>
+          <a class="btn btn-light">Daftar jadi anggota</a>
+     </div>
+  </section>
+
+  <!-- ===== [5] FOOTER =====
+       Isi     : kiri "© 2026 Hima Nihongo" (tulis &copy;) · kanan "halo@himanihongo.example"
+       Struktur: footer.footer > div.container.footer-inner > 2x p
+  -->
+
+  <footer id="footer" class="footer">
+     <div class="container footer-inner">
+          <p>&copy; 2026 Hima Nihongo</p>
+          <p>halo@himanihongo.example</p>
+     </div>
+  </footer>
+
+</body>
+</html>
